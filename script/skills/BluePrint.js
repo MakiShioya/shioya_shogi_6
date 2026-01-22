@@ -105,7 +105,7 @@ const BluePrint = {
 
     // 3. 演出（画像: BluePrint.png / 音: BluePrint.mp3 / 光: blue）
     if (typeof playSkillEffect === "function") {
-       playSkillEffect("BluePrint.png", "BluePrint.mp3", "blue");
+       playSkillEffect("BluePrint.PNG", "BluePrint.mp3", "blue");
     }
 
     // 4. 棋譜
@@ -118,4 +118,5 @@ const BluePrint = {
   }
 
 };
+
 
