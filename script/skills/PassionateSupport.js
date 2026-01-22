@@ -78,7 +78,7 @@ const PassionateSupport = {
     // 3. 演出（もしあれば）
     if (typeof playSkillEffect === "function") {
       // 画像や音があれば指定してください。なければ空文字でOK
-    playSkillEffect("PassionateSupport.png", "PassionateSupport.mp3", "red"); 
+    playSkillEffect("PassionateSupport.PNG", "PassionateSupport.mp3", "red"); 
     }
 
     // 4. 棋譜用文字列
@@ -89,4 +89,5 @@ const PassionateSupport = {
     // ★修正：moveCount ではなく (kifu.length + 1) を使います
     return `${kifu.length + 1}手目：${mark}${files[x]}${ranks[y]}${pieceName[baseUpper]}成(応援)`;
   }
+
 }; 
