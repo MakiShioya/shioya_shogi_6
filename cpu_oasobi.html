@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>しおや将棋 おあそび</title>
+<link rel="stylesheet" href="script/style.css">
+</head>
+<body>
+<div id="game">
+
+  <div class="side left">
+    <div class="hand white-hand" id="whiteHandBox">
+      <h3>後手の持ち駒</h3>
+      <div id="whiteHand"></div>
+    </div>
+    <button id="undoBtn" class="square-btn" onclick="undoMove()">待った</button>
+  </div>
+
+  <div id="center">
+    <div id="status"></div>
+
+    <div id="timerBox" style="font-weight: bold; font-size: 18px; margin: 5px 0; color: #333;">
+      考慮時間: 0秒
+    </div>
+
+    <div id="checkStatus"></div>
+    
+    <div style="position: relative; display: inline-block;">
+      
+      <img id="skillCutIn" src="" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 300px; display: none; z-index: 100; pointer-events: none;">
+
+      <table id="board"></table>
+      
+    </div>
+    <div style="position: absolute; bottom: -90px; left: 0; width: 100%; text-align: center; pointer-events: none;">
+    </div>
+
+  </div>
+
+  <div class="side right">
+    <button id="resignBtn" class="square-btn">投了</button>
+    <div class="hand black-hand" id="blackHandBox">
+      <h3>先手の持ち駒</h3>
+      <div id="blackHand"></div>
+    </div>
+  </div>
+
+</div>
+    <button id="skillBtn" class="square-btn" style="display: none; margin-top: 15px;" onclick="toggleSkillMode()">必殺技</button>
+
+<div id="kifu" style="margin-top: 10px; text-align: left;"></div>
+
+<audio id="skillSound" src=""></audio>
+<audio id="bgm" src="script/audio/natsu2.mp3" loop></audio>
+<audio id="moveSound" src="script/audio/move.mp3"></audio>
+<audio id="promoteSound" src="script/audio/promote.mp3"></audio>
+
+<script src="script/globals.js"></script>
+<script src="script/rules.js"></script>
+<script src="script/kifu.js"></script>
+<script src="script/ai/ai_Lv2.js"></script>
+<script src="script/skills/SilverArmor.js"></script>
+<script src="script/characters/Itsumono.js"></script>
+<script src="script/skills/PassionateSupport.js"></script>
+<script src="script/characters/Nekketsu.js"></script>
+<script src="script/skills/BluePrint.js"></script>
+<script src="script/characters/reisei.js"></script>
+<script src="script/main.js"></script>
+
+</body>
+</html>
