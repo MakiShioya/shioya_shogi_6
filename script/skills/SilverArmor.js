@@ -63,7 +63,7 @@ pieceStyles[y][x] = "green";
 // ★★★ 追加：演出の実行 ★★★
     // playSkillEffect(画像ファイル名, 音声ファイル名, 光る色)
     if (typeof playSkillEffect === "function") {
-      playSkillEffect("SilverArmor.png", "SilverArmor.mp3", "silver");
+      playSkillEffect("SilverArmor.PNG", "SilverArmor.mp3", "silver");
     }
     // ★★★★★★★★★★★★★★★★★
 
@@ -77,4 +77,5 @@ pieceStyles[y][x] = "green";
 
     return moveStr;
   }
+
 };
