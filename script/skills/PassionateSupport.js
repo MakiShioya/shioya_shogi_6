@@ -78,7 +78,7 @@ const PassionateSupport = {
     // 3. 演出（もしあれば）
     if (typeof playSkillEffect === "function") {
       // 画像や音があれば指定してください。なければ空文字でOK
-    playSkillEffect("PassionateSupport.PNG", "PassionateSupport.mp3", "red"); 
+    playSkillEffect("PassionateSupport.png", "PassionateSupport.mp3", "red"); 
     }
 
     // 4. 棋譜用文字列
@@ -91,3 +91,4 @@ const PassionateSupport = {
   }
 
 }; 
+
